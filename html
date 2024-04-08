@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dribbble</title>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+    <style>
+        /* Styling for containers */
+        .container {
+            border-radius: 10px;
+            text-align: center;
+        }
+
+
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Section 1 -->
+    <div id="section1" style="display:flex">
+
+        <div class="left-side" style="display:flex; flex-direction:column;justify-content:center; align-items:center;">
+            <div style="height:85%;justify-content:space-between;gap:2rem;margin:20px;">
+                <p style="position:absolute; top:8px;left:3px;">Dribbble</p>
+                <h1>Discover the worlds Top Designers and creatives</h1>
+                <img style="height:70%;width:100%;" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxASEBAQEBAWEBAVEBIbFhUVFxcQEBASIB0iIiAdHx8kKDQlJCYxJx8fJTIlMSstMDAwIys0RDMuNzQ5MDcBCgoKDg0OGBAQGDcaGBorKzcrNysrLCs3LTcrLi43Kys3KzU1NTc3Nyw3MTctMTMzMS03Ny4tKzctLSstNCsrLP/AABEIAMgAyAMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABQYDBAcCAf/EAE4QAAEDAgMDBQkJDgUFAAAAAAEAAgMEEQUSIQYTMRQiMkFRFlRhcXKBoaOxQlNVYnSRssHSByQ0NUNSc4KEkpOkwuEjM2Nk0RUlorPD/8QAGgEBAAIDAQAAAAAAAAAAAAAAAAMFAQIEBv/EACwRAAICAQMBBwQCAwAAAAAAAAABAhEDBBIhMQUTMkFRcZEUUmGBIkIzoeH/2gAMAwEAAhEDEQA/AOlIiLzRdBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERDARa9XWRRC8sjIh2vc1ntWWKRrmhzSHNIBBBuHA8CCsuLqxZ7REWDIREQBERAEREAREQBERAEREAREQBEXmU2aSOoH2LKVswyq1uPzzSSR0jo4YY3lrp5GmZ0kg4iNgIuBwLjotff1nwn/ACcf2lBYPPu8OZKBctgkfr1u1PtVkwvY7ewQyyYhUiSSJj3BhjYwFwBsBl4C69Dj0uNKqRV5NRJPl0YN/WfCf8nH9pN/W/Cf8pH9pSPcKz4Qq/34/sqIxvBqamLYzXV01Q8cyCIxvmeO22XQfGK3+mh9q+DRalt0mfK7E6mFhkkxSzeH4HGS49QAzala8NTiL2k1taaaN2rY442MrXs6r26F/nWjR0zonmeZxfOHEQMkkZUGlbbVzi0Buc8BbgvFRPa7nEkk9epK5cjxxdQir9jsxxk1cmfMToaV8b44oLPfoZ5XGoqLX1sTwv4Fuw4jXhjWRV8bMrQGtkp2NZYCwGZt7fMo5tSLXOnYOJWSOUHgDbtIUTnL+yv3Jdi8jdix2vYQ2sreSuceY7k0U1NL5Mgda/gNlKb+s+E/5SP7Shopy0FujmO6THAPjf42nRQuKytikiZAZaON7ueY3unjHkRdK/nU+JYsjrak/YhyKceUy57+s+E/5OP7S+8orerEhfw0jLehy3o9iGFoP/UKzVoOrmNOo7MuijNo8CNFEyojrJ5v8eFjo5sj2OY91tLAWIXR9ND7V8HItS263EtgWOyOl5LVBgmLC6OSO+5qGDjYHVrh1tKsS5/LpWYaRx5WRfwFjrq/hU2txRxzW3zLHBNyjyfURFxk4REQBERAEREAREQBeJui7yXexe14m6LvJd7FtHqjDOV0f4p/ZJPYV0rBJfvWm+Tw/QC5rR/in9kk9hV9weX72p/0EP0QvV4VdnndZKkvc3cZxZtPTyzuFxGwm3W53UPObBUJ0j4w/Oc1VLzqmQdIvP5MdjG8LdqnttoXyUcmR4YYy2U3GbMI7utbxgfMqBS17pWAkuJ90XaF7+s+lRatS2quh0dnbWm/MkHVYGmX0hasj7kkryi4VFItLsL2yZw4FeEWeoN2CpvodD6CkzHEtlidu6iJ143ji146j4D2LSWzG4mOWxscrrHsNlpW2VxD5VM6Zs9jbaqnjnAyuIs9vvco0c35/QQov7ocl6MD/d0n/sC0thsPjip2TsdIX1EUbpMz8zS+3EBe9u5L0jR/uqX6YVzt4POqSWal0sj5/wAMw35b/Q5X8KgT/hmG/Lf6HK/hef7Q8cfYv9L4T6iIq46giIgCIiAIiIAiIgC8TdF3ku9i9rxN0XeS72LaPVGH0OV0f4p/ZJPYVcMJk+94P0EX0QqhRfir9kk9hVgwepBp4bdUUY8Ryhev0yuzy/aUqS9ya3q5g0WkqAeIqp/pFXLGKyRrGNiIEss0cTXHVrC82zEeBVfGcNNLPfO+SKU/5j+nvxxv4+K01jVbfMl7IjLmfkYURFWF4EREAXqpq2Qwlz787MBbXqK8qQ2awc1khkdI+Jjbsgcy3+Z7p1jxHVbr1W0Ypu5dDEm0uOpatnmmOkpWHi2CMHx2Wlto+9M35VTfTC+4JXvkhBktvGvkY8jouexxaSPAbLS2unG5jb1mpp/Q8K7auFo8njk/qKfWzNP+GYb8t/ocr+FQJ/wzDflv9DlfwvMdoeKPseq0vhNSvxOCDKZ5o4Q42bncGZj4Lraa64BBuCNCOBXMKzFJpqhtTHuRygGKNjw6R0MLC4lx0sb8S0eAKwbIVboZGUBk30W5e6JxZunx5XDMwi5BHO5vZayjyaTbDdfJDj7Qxyzd18fmupcURFxFiEREAREQBfF9WSlcA4E8Bf57aLaKtpGsnSs8ZTYHqvbzrHP0XeS72La5QMsYt0TcjtKwvdcknrOq3koqqZpFt9Ucmwx4dhmQav5NILdbtDwWHC8WYyOMiVnQbcFw7Fs4nh0lC90cjHGmzOMUzWl7Awm+V1uBHpUY6roiSTuyT1ln9l6fT50la5TKjU6Xvf4yJatxSmmjMb5A25BBa9uZjgbhwN+IK148SE0nJaqdk8UzSGvDWxvbMDdpNjxOuvao81VD/pfuf2UnhOzEteWNp6Qsp3PZnqXMbE0R35xjvq424WW+Wcci5X7NdNp3p3/GT2+hGVEUkEm5n4+4k4MmH1HtC9rpL/uZGQGOoxCWWnDuawMjbJl6szyDc+EALZb9zXCI9JN4+3vk77/MCFxvGn5nf36OWouoP2EwM6Bhae1s0w+talV9yujlaRT1k8d/jtnZ8xF/Ssd0vUd+vQ51QUT6qTcxnLGD/iy+5jb1gHtt8y3IccIdI2lqmU1M1xZFzGOmEYFswJOhOp1CsGL7B4syJtNAYJqcmzt396vc344N9Os2NyqtXQRU081LVMhbNE8C7WHLI0gEEXF+tTY4xXVWiPLNyVRdMkaXFaeGNscT22aOLntuT1k66klR2JVolMbQ8Pe6ohsAQTo654LFyqh/0/3P7L1FXUjTdpYD8Vhv6AuqWotVRXY9AoT322yxyzA1uHNBvasv/wCDlfaubJG512tdldlzENaXW04+FUbZDCZZqiOrkjdHBFmMQeMj5pCLZrdTQCfGo98lN9+VNXC2oe2snaHS5piGh1mta0nKFTZcUc+Wk/Ci3hJ44crqQ2DRNmYw8ldNJziS+uZSsDyedkYALC6ntlGvZikbBBJEeTzbxskzatoj0sWOtcc4DjxXnDKuiqC6M4fBG8AHK6FgJbwuC1bmH0AhcZqGU0j3gZo5BymlkA4DXnt8xK7M0d0HFLlnPBwUlKjoK+KD2fx100ktPNG2Koja1xyO3kMjDwc0+PSx4KdXncmNwltl1LOMlJWgiItDYIiICPxnFGU8Yc5rpHve1kcbBeSaQ8GhV+jxiuq6xlEzd4e7dyPc67K5/NIGUAENaR13UptJDKHUlVFGZnU05e6JvTkjc0tdl+MAbhUXZ5raOvo6iMTmIS7pzpKXkoDH3DczvdvJPHwK30WDFKFvmRyZpyT4L5WbPzRFolx2Vj3cBuoADrbhbhdY6hlbR1VJDPVMrIql0rR/hCCaMtbmzaGxHV51NVWDQTVQqX1HMJjJiIsS5nRBPZfW1uKi8SqBU4w0M50dJRuubab6Y/Zb6VLmxxUJNx/0RY5NyVP3JhaeJVkVPE+aUhsbG3Jtc+AAdZJ0AW4qxtlIBLhoeLw8tu4dReGEsB8/sVThjumkdsuEYdnaeStxNvL4GtjjpN9BTnnCMuflDpBwL7DhwF11HQDsAHiAC5pXYkIsSoqmN2ksUsDr9TiQ9gPjIIUvtBtWGbiN5ZC2R787nOsMjWk6X4XNgr7Eriq4K7KnuJLEcYc4lsZLWdo6Tv8AhRRUO7amgGhrIv3rrLDtDRO6NXCf12j2qXbRpRJr1G8g3abHtGhWn/1KDjv4rfpGf8rWm2iom9KrhH67T7EoyXTCcWzkMk6XUfzvAfCvWP7O0tYzLURB5HReObLGe1rhqFRW7U0BOlZFfyrK04LtdFMx9ueY3lpcxzXtfoCHee6w4vyNWmipVOJvw2rNHVPdU0+6Y9lSWjeQMc4tAltxFxbP4dVa2gaEAeMWVZ5dHUYliEkoBjbTQ0+TpB17vc30i6z7AyudQRXJIa6VjCdSYmvIb6NPMqnW40v5R4/6d+FulZYly7k0ckVc2V2RnLqkl17ZCH3B8y6iFy9tEJo6+InLmrarXjY57j2LPZ3WX6NdT0R42Zpocz5WVHKH2DSbZMjb3tbw9qlqE3iYfiqPwLCHwvfJI9r3uDG2YC1gaD4etbdLMGwRk/m6DtN1aS5OFmfZU/8AdZ/kY+mFe1z7Yo3xKY9Zov8A6LoKpdf/AJf0iy0/gQREXEThR+NYqymi3r2ueS5rWMYLvlkdwaFIKI2mwflUIja/dSMkY+N9swa9vC46xqVJj2uS3dDWV1waB2grOrDbeVVQj2XVUqsGq5pp5JoGvZJJnax1c5u6PZzdCL8NNFM9z2K98U3rk7n8V74pvXKyxZMeN3BpfJC4uXUiO5+c/ko2+OvqnewLFJspUEPyOhhc4avbUVb3ePhr51Odz2K98U3rk7nsV74pvXKV6tv+yNViXozZgqMSaxrBPSANa0XMdRI42Frkk6lauK0tbUxOhmqqfIbdGmfma4G4IJfoR2r73PYr3xT+uTuexXvim9coFKCdpqzevcr21FPURwMjfWCdz3tDW7gMdca582a4t2qGqcjSZJnGWQ8XyHO4nz+xSe0FJUx1ccdS9kjhA5zd3nygF1vddeigXc+VxOoZoB8Y9assTuK5+Dky+KjJy/8ANhJHk2Xx1UD0qcn9VpWRFJwRcGDfQ97a+Qvbau3RpyP1QFluviWZPBrx7uIgeTcLYpctxLA4wyDUPZzT5+0eArEsMXMmFtA8HT4wT2MFhwHD5qimlaK0xOM0m+buQ55edSc+YEgi3sVopBXxMZFFVUwjY0BrTTPaA0eJ6quzlHVS1M8dLJHGd1G928z2OpGmXrVl7nsV74pvXKv1E1uqTX7OzHzFM3BW4mPy1G7xxTt+tQMGEV7HSlstKd5LI8gmYAOcbm3NUl3PYr3xTeuTuexXvim9co4ZYw8LRtKG7h2aRpsSHVSnxSuHtatJmFV4aAYoX2Friob9YU13PYr3xTeuTuexXvim9cpVq/yjTuI+jI/Aoq6mqX1BoxIHQbvK2ohv0r31KvGC4qypi3jGuYQ5zXseLPikbxaVV+57Fe+Kb1ysOzWD8lhMbpN5I+R75H2yh0juNh1DQLk1U4TW61u/BLji48LoS6IirycIiIAiIgCIiAIiIDnX3RorVlK/qfTSN87XX+tUeDR8o+P9S6rt9hEk8MLoWF8sU7SGjiWO5rvqPmVMl2MrxPpCC17OIe3KCO0367q80meHdJN0cGbG97aRCIrD3F1/vTf4jE7i6/3pv8Rin+oxfcRd3L0K8isPcXX+9N/iMTuLr/em/wARifUYvuQ7uXoV5YZBeWEeFx9Cs/cXX+9N/iMWGn2MrjOSYQAxoAJe3K4nXQ31WVnx/ch3cvQmvuaxXqK2TqbHAzz6uP1LoKrWwWFSQUrjMwsmlmke5p6TRwaD5h6VZVSaqallbR34lUUgiIuYlCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgP/9k=" />
+                <p style="position:absolute; bottom:10px;">Art By Peter Tarak's</p>
+            </div>
+
+        </div>
+        <div class="right-side" style="display:flex; flex-direction:column;justify-content:center; align-items:center;">
+            <!-- Form goes here -->
+            <p style="position:absolute; right:10px ; top:6px;">Already a member? <span style="color:blue">signin</span></p>
+            <form id="signup-form">
+                <h2>Sign up to Dribbble</h2>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" minlength="6" placeholder="6+ charecters" required>
+                <div style="display:flex;">
+                    <input style="width:40px; height:40px;" type="checkbox" required />
+                    <p>Creating an account means you're okay with our <a href="#">Terms of Service</a>, <a href="#">Privacy Policy</a>, and our default Notification Settings</p>
+                </div>
+                <button id="toggleButton1">Create Account</button>
+            </form>
+            <footer>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div id="section2" class="container" style="display:none;">
+        <p style="font-size:25px;color:#f20c92;position:absolute;left 10px;padding:-bottom:50px;">dribbble</p>
+        <main style="display:flex; flex-direction:column; justify-content:space-between;">
+            <section>
+                <h1>Welcome! Let's create your profile</h1>
+                <span class="material-symbols-outlined">mark_email_unread</span>
+                <p>Let others get to know you better! You can do these later.</p>
+            </section>
+            <div id="profileForm" style="display:flex;flex-direction:row;">
+                <div>
+                    <label for="avatar">Add an avatar:</label>
+                    <div class="avatar-container">
+                        <img id="avatarPreview" src="#" alt="Selected Avatar" style="display: none;">
+                    </div>
+                </div>
+                <div style="padding-top:40px;">
+                    <input type="file" id="avatar" name="avatar" accept="image/*">
+                    <p>Or choose one of our defaults</p>
+                </div>
+
+            </div>
+            <label for="location">Add your location:</label>
+            <input type="text" id="location" name="location" placeholder="Enter your location">
+        </main>
+        <button id="toggleButton2">Next</button>
+
+    </div>
+
+    <!-- Section 3 -->
+    <div id="section3" style="display:none;">
+        <nav>
+            <div class="topnav">
+                <img src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/design/discover/mascot-logo-design/mascot-logo-design_fb-img_1200x800.jpg" alt="Company Logo" class="logo">
+                <button id="backButton">&#8592; Back</button>
+            </div>
+        </nav>
+        <div class="container">
+
+            <h1>What brings you to Dribbble?</h1>
+            <p>Select the section that brings you most and align you most.</p>
+            <div style="display:flex; flex-direction:row;justify-content:space-between;gap:2rem;">
+                <div class="options-container">
+                    <label class="option">
+                        <img src="https://miro.medium.com/v2/resize:fit:1000/1*txF9GSaoS8rVt3bS2tPbZA.png" alt="Logo" class="photo" onclick="toggleImageSize(this)">
+                        <h3>I'm looking to hire a designer</h3>
+
+                        <p class="hidden-paragraph">With 7 million shots from a vast community of designers, Dribble is the great community for source for design inspiration.</p>
+                        <input type="checkbox" class="checkbox" name="hire_designer" onclick="toggleParagraph(this)">
+                        <span class="checkbox-label"></span>
+
+                    </label>
+                    <!-- Similar labels for other options -->
+                </div>
+                <div class="options-container">
+                    <label class="option">
+                        <img src="https://miro.medium.com/v2/resize:fit:1000/1*txF9GSaoS8rVt3bS2tPbZA.png" alt="Logo" class="photo" onclick="toggleImageSize(this)">
+                        <h3>I'm looking to hire a designer</h3>
+
+                        <p class="hidden-paragraph">With 7 million shots from a vast community of designers, Dribble is the great community for source for design inspiration.</p>
+                        <input type="checkbox" class="checkbox" name="hire_designer" onclick="toggleParagraph(this)">
+                        <span class="checkbox-label"></span>
+
+                    </label>
+                    <!-- Similar labels for other options -->
+                </div>
+                <div class="options-container">
+                    <label class="option">
+                        <img src="https://miro.medium.com/v2/resize:fit:1000/1*txF9GSaoS8rVt3bS2tPbZA.png" alt="Logo" class="photo" onclick="toggleImageSize(this)">
+                        <h3>I'm looking to hire a designer</h3>
+
+                        <p class="hidden-paragraph">With 7 million shots from a vast community of designers, Dribble is the great community for source for design inspiration.</p>
+                        <input type="checkbox" class="checkbox" name="hire_designer" onclick="toggleParagraph(this)">
+                        <span class="checkbox-label"></span>
+
+                    </label>
+                    <!-- Similar labels for other options -->
+                </div>
+            </div>
+            <h4>Anything else? You can select multiple options.</h4>
+
+
+            <button id="toggleButton3">Finish</button>
+            <p>Or Press Return </p>
+        </div>
+
+
+    </div>
+
+    <!-- Section 4 -->
+    <div id="section4" class="" style="display:none;">
+        <div id="wrap">
+            <!-- Navbar -->
+            <nav id="top-navbar">
+                <!-- Logo and navigation links -->
+                <div class="logo">Dribble</div>
+                <ul class="nav-links">
+                    <li><a href="#" style="text-decoration:none;">Inspiration</a></li>
+                    <li><a href="#" style="text-decoration:none;">Find Work</a></li>
+                    <li><a href="#" style="text-decoration:none;">Learn Design</a></li>
+                    <li><a href="#" style="text-decoration:none;">Go Pro</a></li>
+                    <li><a href="#" style="text-decoration:none;">Hire Designers</a></li>
+                </ul>
+
+                <!-- Search icon and profile photo -->
+                <div class="search-icon"><span class="material-symbols-outlined">search</span></div>
+                <div class="profile-photo"></div>
+                <!-- Upload button -->
+                <button class="upload-button" style="background-color:#cf0e6f;color:#fff; padding:10px;border-radius:5px;">Upload</button>
+            </nav>
+        </div>
+        <div style="display:flex; flex-direction:column; justify-content:center;align-items:center;padding-top:20px;padding-bottom:20px;">
+            <div style="width:50%;display:flex; flex-direction:column; justify-content:center;align-items:center;">
+                <h1>Please Verify Email</h1>
+                <span class="material-symbols-outlined">mark_email_unread</span>
+                <p>Please verify you email address. We sent a confirmation mail to:</p>
+                <h4>account@refro.design</h4>
+                <p>Click the confirmation link in that email to begin using Dribble.</p>
+                <p>Didn't recive the email? Check your Spam folder, it may have been caught by a filter. If you still don't see it, you can <span style="color:#cf0e6f">resend the confirmation email.</span></p>
+                <p>Wrong email Address? <span style="color:#cf0e6f;font-style:edwardian-script">Change it.</span></p>
+            </div>
+        </div>
+        <div style="height:70vh;display:flex;gap:1rem;padding:20px;">
+            <div style="width:28%;padding:20px;">
+                <h1 style="font-family:Bickley Script;color:#cf0e6f">dribbble</h1>
+                <p>Dribbble is the world's leading community for creatives to share, grow, and get hires.</p>
+                <div>
+                    <span class="material-symbols-outlined">mail</span>
+                    <span class="material-symbols-outlined">support_agent</span>
+                    <span class="material-symbols-outlined">call</span>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-facebook"></i>
+
+                </div>
+            </div>
+            <div>
+                <h3>For Designers</h3>
+                <p>Go Pro </p>
+                <p>Explore Design Works</p>
+                <p>Design Blog</p>
+                <p>Overtime Podcast</p>
+                <p>Playoffs </p>
+                <p>Weekly Podcast</p>
+                <p>Refer a work code of conduct</p>
+
+            </div>
+            <div>
+                <div>
+                    <h3>For Designers</h3>
+                    <p>Post a job opening</p>
+                    <p>Post a freeelance Project</p>
+                    <p>Seach for bussiness</p>
+                </div>
+                <div>
+                    <h3>For Designers</h3>
+                    <p>Advertise with us</p>
+                </div>
+            </div>
+            <div>
+                <h3>Company</h3>
+                <p>About </p>
+                <p>Careers</p>
+                <p>Support</p>
+                <p>Media kit </p>
+                <p>Testmonials</p>
+                <p>APi </p>
+                <p>Terms and services</p>
+                <p>Policy</p>
+                <p>Cooky policy</p>
+            </div>
+            <div>
+                <div>
+                    <h3>Directories</h3>
+                    <p>Design jobs</p>
+                    <p>Design for Hire</p>
+                    <p>Freelance Design</p>
+                    <p>Tags </p>
+                    <p>Places</p>
+                </div>
+                <div>
+                    <h3>Dribble Market Places</h3>
+                    <p>Creative Market</p>
+                    <p>Font Spring </p>
+                    <p>Font Sequel</p>
+                </div>
+            </div>
+            <div>
+                <h3>Design Resources</h3>
+                <p>Freelancing</p>
+                <p>Design Hiring</p>
+                <p>Design Portfoli</p>
+                <p>Design Education</p>
+                <p>Creative Process</p>
+                <p>Design Industy Trends</p>
+            </div>
+        </div>
+        <hr />
+        <footer style="display:flex; flex-direction:row; justify-content:space-between; padding:10px;">
+            <p>&#169;2023 Dribbble All Rights Reserved</p>
+            <p><strong>20,158,142</strong>shots Dribbled</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // JavaScript to handle button clicks for each section
+        document.getElementById("toggleButton1").addEventListener("click", function() {
+            document.getElementById("section1").style.display = "none";
+            document.getElementById("section2").style.display = "block";
+        });
+
+        document.getElementById("toggleButton2").addEventListener("click", function() {
+            document.getElementById("section2").style.display = "none";
+            document.getElementById("section3").style.display = "block";
+        });
+
+        document.getElementById("toggleButton3").addEventListener("click", function() {
+            document.getElementById("section3").style.display = "none";
+            document.getElementById("section4").style.display = "block";
+        });
+
+        document.getElementById("toggleButton4").addEventListener("click", function() {
+            document.getElementById("section4").style.display = "none";
+            document.getElementById("section5").style.display = "block";
+        });
+
+        document.getElementById("toggleButton5").addEventListener("click", function() {
+            document.getElementById("section5").style.display = "none";
+            document.getElementById("section1").style.display = "block";
+        });
+    </script>
+</body>
+
+</html>
